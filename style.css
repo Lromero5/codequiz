@@ -1,0 +1,38 @@
+/* This is the style sheet for the index.html */
+
+/* this is the style for the header. High scores, time */
+.header {
+    background-color: #F5FFFA;
+    font-family: 'Courier New', Courier, monospace;
+    color: purple;
+}
+
+/* this controls the position of "time left"  */
+.timeleft {
+    position: relative;
+    left: 100px;
+}
+
+/* This centers the div where the code quiz challenge text is written */
+.centerme {
+  margin: auto;
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+}
+
+/* This aligns the code quiz challenge, and description of the quiz text */
+h1, p {
+    text-align: center;
+}
+
+/* this will be the style for all the buttons on the quiz */
+.stylebutton{
+    background-color: purple;
+    color: white;
+    
+}
+
+.choicebutton{
+    display: block;
+}
