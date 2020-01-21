@@ -8,16 +8,16 @@
 }
 
 /* this controls the position of "time left"  */
-.timeleft {
+/* .timeleft {
     position: relative;
     left: 100px;
-}
+} */
 
 /* This centers the div where the code quiz challenge text is written */
 .centerme {
   margin: auto;
   width: 50%;
-  border: 3px solid green;
+  border: 3px solid white;
   padding: 10px;
 }
 
@@ -30,6 +30,8 @@ h1, p {
 .stylebutton{
     background-color: purple;
     color: white;
+    position: relative;
+    left: 40%;
     
 }
 
