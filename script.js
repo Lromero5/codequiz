@@ -5,7 +5,7 @@ var correct = 0;
 var wrong = 0;
 
 var counter = 0;
-var timeleft = 60;
+var timeleft = 45;
 
 // * The user arrives at the landing page and is presented with a call-to-action to "Start Quiz." 
 // 1. A button has to be created "start quiz" in html and it has to be assigned to a variable by id, 
@@ -40,19 +40,19 @@ var questions = [
       answer: "parentheses"
     },
     {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
+      title: "Inside which HTML element do we put the JavaScript?",
+      choices: ["<js>", "<script>", "<javascript>", "<scripting>"],
+      answer: "<script>"
     },
     {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
+      title: "Where is the correct place to insert a JavaScript?",
+      choices: ["The <body>", "Both <head> and <body>", "The <head>", "the <style>"],
+      answer: "Both <head> and <body>"
     },    
     {
-      title: "The condition in an if / else statement is enclosed within ____.",
-      choices: ["quotes", "curly brackets", "parentheses", "square brackets"],
-      answer: "parentheses"
+      title: "How do you call a function named myFunction?",
+      choices: ["myFunction()", "call myFunction()", "var", "hey function"],
+      answer: "myFunction()"
     },  
     ///etc.
   ];
@@ -111,16 +111,12 @@ function keeptime() {
 
     setInterval(timeIt, 1000);
 
+}
+
+    //I can't get the timer to stop
+    if (timeleft === 0){
+        clearTimeout(keeptime);
     }
-    
-    if (keeptime === 0){
-        clearInterval(timeIt);
-
-    
-    //This is the end of the ready function    
-    }
-
-
 
 //save high scores to local storage
 //set interval for timer.  go to the next questions. ++questionindex and fire off displayquestion() 
@@ -133,5 +129,7 @@ function keeptime() {
 
 
 // * When time runs out and/or all questions are answered, the user is presented with their final score and asked to enter their initials. Their final score and initials are then stored in `localStorage`.
+
+    //This is the end of the ready function    
 
 })
